@@ -30,7 +30,7 @@ class CRM
     when 3 then delete_a_contact
     when 4 then display_all_contacts
     when 5 then search_by_attribute
-    when 6 then exit
+    when 6 then exit!
     end
   end
 
@@ -51,7 +51,7 @@ class CRM
   end
 
   def modify_existing_contact
-  
+    
   end
 
   def delete_contact

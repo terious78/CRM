@@ -79,7 +79,7 @@ class Contact
 
   # This method should delete all of the contacts
   def self.delete_all
-    @@contacts.clear
+    @@contacts = [] # => @@contacts.clear
   end
 
   def full_name
@@ -88,8 +88,8 @@ class Contact
 
   # This method should delete the contact
   # HINT: Check the Array class docs for built-in methods that might be useful here
-  def delete(x, contact)
-    @@contact
+  def delete
+    @@contact.delete(self)
   end
 
   # Feel free to add other methods here, if you need them.
