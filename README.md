@@ -485,3 +485,4 @@ To enhance the user experience of your program, you can use `puts "\e[H\e[2J"` t
 * [Stack Overflow: `attr_accessor`, `attr_reader`, `attr_writer`](http://stackoverflow.com/questions/5046831/why-use-rubys-attr-accessor-attr-reader-and-attr-writer)
 * [Blog - User Stories](http://codesqueeze.com/the-easy-way-to-writing-good-user-stories/)
 * [Instance Method versus Class Method – Stack Overflow](http://stackoverflow.com/questions/11655593/ruby-on-rails-should-i-use-class-method-or-instance-method-and-why)
+# Customer_Relationship_Manager
