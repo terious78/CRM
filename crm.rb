@@ -51,11 +51,21 @@ class CRM
   end
 
   def modify_existing_contact
-    
+    print 'Enter the New First Name => '
+    first_name = gets.chomp
+
+    print 'Enter the New Last Name => '
+    last_name = gets.chomp
+
+    print 'Enter the New E-mail Address => '
+    email = gets.chomp
+
+    print 'Enter the New Note => '
+    note = gets.chomp
   end
 
   def delete_contact
-
+    print 'Enter '
   end
 
   # This method should accept as an argument an array of contacts
@@ -78,3 +88,6 @@ class CRM
   # Add other methods here, if you need them.
 
 end
+
+
+Contact.update(x, new_value)
