@@ -25,12 +25,12 @@ class CRM
 
   def call_option
     case user_selected
-    when 1 then add_new_contact
-    when 2 then modify_existing_contact
-    when 3 then delete_a_contact
-    when 4 then display_all_contacts
-    when 5 then search_by_attribute
-    when 6 then exit!
+      when 1 then add_new_contact
+      when 2 then modify_existing_contact
+      when 3 then delete_a_contact
+      when 4 then display_all_contacts
+      when 5 then search_by_attribute
+      when 6 then exit!
     end
   end
 
@@ -82,12 +82,13 @@ class CRM
     Contact.all.each do |contact|
       print ":first_name, :last_name, :email, :note"
     # HINT: Make use of the display_contacts method to keep your code DRY
+    end
   end
 
   def search_by_attribute
     print "Enter attributes to search by => "
     attributes = gets.chomp
-    print 
+    print
     # HINT: Make use of the display_contacts method to keep your code DRY
   end
 
