@@ -1,7 +1,6 @@
 require_relative 'contact'
 
 class CRM
-
   def initialize(name)
     @name = name
   end
@@ -23,7 +22,7 @@ class CRM
     puts '[6] Exit'
   end
 
-  def call_option
+  def call_option # => user_selected
     case user_selected
       when 1 then add_new_contact
       when 2 then modify_existing_contact
@@ -68,7 +67,17 @@ class CRM
 
   def delete_contact
     print 'Enter Customer Info you want to delete => '
-
+    info = gets.chomp
+    if info == '1'
+      :first_name
+    elsif info == '2'
+      :last_name
+    elsif info == '3'
+      :email
+    elsif info =='4'
+      :note
+    end
+    return 'No list!'
   end
 
   # This method should accept as an argument an array of contacts
@@ -80,7 +89,7 @@ class CRM
 
   def display_all_contacts
     Contact.all.each do |contact|
-      print ":first_name, :last_name, :email, :note"
+      print "first_name: #{contacts.first_name}, last_name: #{contacts.last_name}, email: #{contacts.email}, note: #{contacts.note}, id: #{contacts.id}"
     # HINT: Make use of the display_contacts method to keep your code DRY
     end
   end
@@ -88,10 +97,16 @@ class CRM
   def search_by_attribute
     print "Enter attributes to search by => "
     attributes = gets.chomp
-    print
+
+    print "Enter value to search for => "
+    value = gets.chomp
+
+
     # HINT: Make use of the display_contacts method to keep your code DRY
   end
 
   # Add other methods here, if you need them.
 
 end
+
+CRM.new('DAVID')
