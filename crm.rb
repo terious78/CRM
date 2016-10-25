@@ -62,10 +62,13 @@ class CRM
 
     print 'Enter the New Note => '
     note = gets.chomp
+
+    Contact.update(x, new_value)
   end
 
   def delete_contact
-    print 'Enter '
+    print 'Enter Customer Info you want to delete => '
+
   end
 
   # This method should accept as an argument an array of contacts
@@ -76,18 +79,18 @@ class CRM
   end
 
   def display_all_contacts
-
+    Contact.all.each do |contact|
+      print ":first_name, :last_name, :email, :note"
     # HINT: Make use of the display_contacts method to keep your code DRY
   end
 
   def search_by_attribute
-
+    print "Enter attributes to search by => "
+    attributes = gets.chomp
+    print 
     # HINT: Make use of the display_contacts method to keep your code DRY
   end
 
   # Add other methods here, if you need them.
 
 end
-
-
-Contact.update(x, new_value)

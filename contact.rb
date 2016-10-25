@@ -46,7 +46,7 @@ class Contact
   # 1. which of the contact's attributes you want to update
   # 2. the new value for that attribute
   # and then make the appropriate change to the contact
-  def update(x, new_value)
+  def update
     if x == 'first_name'
       self.first_name = new_value
     elsif x == 'last_name'
